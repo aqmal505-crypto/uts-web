@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Jabatan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            width: 250px;
+        }
+        .sidebar h3 {
+            font-weight: bold;
+        }
+        .sidebar p {
+            margin-top: 10px;
+        }
+        .sidebar .menu-header {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            color: #ddd;
+        }
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .table-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-add {
+            background-color: brown;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .btn-edit {
+            color: brown;
+        }
+        .btn-delete {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Universitas Pamulang</h3>
+            <p>Welcome, Haiqal Aqmal Suryanto<br>Administrator</p>
+            <div class="menu-header">MENU</div>
+            <a href="dashbor.html">Dashboard</a>
+            <div class="menu-header">MENU KARYAWAN</div>
+            <a href="data karyawan.html">Karyawan</a>
+            <a href="data jabatan.html" class="active">Jabatan</a>
+            <a href="data divisi.html">Divisi</a>
+            <div class="menu-header">MENU ABSENSI</div>
+            <a href="absensi.html">Absensi</a>
+            <a href="izin.html">Izin</a>
+            <a href="#">Lembur</a>
+            <div class="menu-header">MENU PENGGAJIAN</div>
+            <a href="#">Slip Gaji</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <h2 class="mt-3">Data Jabatan</h2>
+            <div class="table-container mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4>Data Jabatan</h4>
+                    <button class="btn btn-add">+ Tambah Jabatan</button>
+                </div>
+                <table class="table mt-3">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>No</th>
+                            <th>Kode Jabatan</th>
+                            <th>Jabatan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>JAB001</td>
+                            <td>Manager</td>
+                            <td>
+                                <a href="#" class="btn-edit">✏️</a>
+                                <a href="#" class="btn-delete">❌</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>JAB002</td>
+                            <td>Staff</td>
+                            <td>
+                                <a href="#" class="btn-edit">✏️</a>
+                                <a href="#" class="btn-delete">❌</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>JAB003</td>
+                            <td>Staff</td>
+                            <td>
+                                <a href="#" class="btn-edit">✏️</a>
+                                <a href="#" class="btn-delete">❌</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>JAB004</td>
+                            <td>Admin</td>
+                            <td>
+                                <a href="#" class="btn-edit">✏️</a>
+                                <a href="#" class="btn-delete">❌</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p>Showing 1 to 4 of 4 entries</p>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
